@@ -15,7 +15,7 @@ var server = http.createServer(router);
 router.use(express.static(path.resolve(__dirname, 'client')));
 
 console.log('Booting up the server! Please wait until finished...')
-server.listen(process.env.PORT || 90, process.env.IP || "0.0.0.0", function(){
+server.listen(process.env.PORT || 2340, process.env.IP || "0.0.0.0", function(){
   var addr = server.address();
   console.log("All ready! Server listening at", addr.address + ":" + addr.port);
 });
